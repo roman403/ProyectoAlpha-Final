@@ -14,7 +14,7 @@ Creamos las máquinas en AWS y usamos la contraseña generada para conectarnos m
 
 **Sistema Operativo:** Windows Server 2022
 
-![a](https://roman403.github.io/ProyectoAlpha-Final/SECUENCIA ARRANQUE.webp)
+![a](https://roman403.github.io/ProyectoAlpha-Final/Grub01.jpg)
 
 
 
