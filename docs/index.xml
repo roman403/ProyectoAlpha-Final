@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ALPHA</title>
+    <link>https://example.org/</link>
+    <description>Recent content on ALPHA</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 09 Feb 2025 12:19:03 +0100</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dns</title>
+      <link>https://example.org/posts/dns/</link>
+      <pubDate>Sun, 09 Feb 2025 12:19:03 +0100</pubDate>
+      <guid>https://example.org/posts/dns/</guid>
+      <description>&lt;p&gt;El servidor Dns primario es un Windows&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VPN</title>
+      <link>https://example.org/posts/vpn/</link>
+      <pubDate>Sun, 09 Feb 2025 12:19:03 +0100</pubDate>
+      <guid>https://example.org/posts/vpn/</guid>
+      <description>&lt;p&gt;En este apartado se hablara de la Vpn creada en OpenVpn&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arquitectura</title>
+      <link>https://example.org/arquitectura/</link>
+      <pubDate>Sun, 09 Feb 2025 12:15:37 +0100</pubDate>
+      <guid>https://example.org/arquitectura/</guid>
+      <description>&lt;p&gt;Esta es la infraestructura usada en este proyecto&lt;/p&gt;&#xA;&lt;p&gt;Se realizo en AWS con las siguientes máquinas&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
