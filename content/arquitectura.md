@@ -27,8 +27,25 @@ En nuestra red interna un redhat que tiene de servicios, wordpress, moodle y  ng
 
 Hemos elegido varios S.O. cada uno centrado en una tarea para un mejor rendimiento y una mayor redundancia. Así evitamos que si una maquina se cae sea lo que perjudique a varios servicios a la vez.
 
-## REDHAT {#redhat-1}
-
-Lo lanzamos con AWS. La configuración por ahora será la default y le iremos modificando mientras progresa el proyecto.
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/imagen3.png)
+
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/redhat.png)
+
+
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/dnswindows.png)
+
+
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/externanginx.png)
+
+
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/vpn linux.png)
+
