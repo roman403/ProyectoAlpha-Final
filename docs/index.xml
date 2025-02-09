@@ -6,8 +6,15 @@
     <description>Recent content on ALPHA</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 09 Feb 2025 16:24:52 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 16:56:40 +0100</lastBuildDate>
     <atom:link href="https://roman403.github.io/ProyectoAlpha-Final/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seguridad</title>
+      <link>https://roman403.github.io/ProyectoAlpha-Final/posts/seguridad/</link>
+      <pubDate>Sun, 09 Feb 2025 16:56:40 +0100</pubDate>
+      <guid>https://roman403.github.io/ProyectoAlpha-Final/posts/seguridad/</guid>
+      <description>&lt;h1 id=&#34;seguridad&#34;&gt;Seguridad&lt;/h1&gt;&#xA;&lt;h2 id=&#34;conexión-segura&#34;&gt;Conexión segura&lt;/h2&gt;&#xA;&lt;p&gt;Usamos ssh y par de claves para verificar una buena conexion a nuestros servidores. Para poder transferir datos usamos el comando scp tambien usando un par de claves. Para los servidores de la red privada restringimos las conexiones de ip de fuera de la red.&lt;/p&gt;&#xA;&lt;h2 id=&#34;usuarios-y-contraseñas&#34;&gt;Usuarios y contraseñas&lt;/h2&gt;&#xA;&lt;p&gt;Para ciertos servicios usamos usuarios y contraseñas para evitar que no todos puedan conectarse aunque esten en la red privada.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Wordpress</title>
       <link>https://roman403.github.io/ProyectoAlpha-Final/posts/wordpress/</link>
