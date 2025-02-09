@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		
+		
+		
+		<meta property="og:url" content="https://roman403.github.io/ProyectoAlpha-Final/posts/nginxubuntu/">
+  <meta property="og:site_name" content="ALPHA">
+  <meta property="og:title" content="Nginxubuntu">
+  <meta property="og:description" content="Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos
+![][image56]
+Verificamos la instalación Para asegurarnos de que NGINX está instalado correctamente, revisamos su estado:
+sudo systemctl status nginx
+Si NGINX no está activo, lo iniciamos manualmente:
+sudo systemctl start nginx
+Y para asegurarnos de que se inicie automáticamente el sistema:
+sudo systemctl enable nginx
+![][image57]
+También verificamos que el Grupo de Seguridad (Security Group) de la instancia en AWS tiene las reglas correctas:">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-09T17:08:25+01:00">
+    <meta property="article:modified_time" content="2025-02-09T17:08:25+01:00">
+
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Nginxubuntu &middot; ALPHA</title>
+
+		
+		<link rel="stylesheet" href="/ProyectoAlpha-Final/css/style.css">
+		<link rel="stylesheet" href="/ProyectoAlpha-Final/css/fonts.css">
+		
+		<link rel="icon" href="/ProyectoAlpha-Final/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/ProyectoAlpha-Final/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/ProyectoAlpha-Final/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/ProyectoAlpha-Final/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="ALPHA" />
+
+		<script src="/ProyectoAlpha-Final/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/ProyectoAlpha-Final/">
+					
+						<h2 class="nav-title">ALPHA</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/ProyectoAlpha-Final/arquitectura/">
+                
+                <span>arquitectura</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/ProyectoAlpha-Final/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2025-02-09 17:08:25 &#43;0100 CET">February 9, 2025</time>
+</div>
+
+		<h1 class="post-title">Nginxubuntu</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos</p>
+<p>![][image56]</p>
+<h3 id="verificamos-la-instalación"><strong>Verificamos la instalación</strong></h3>
+<p>Para asegurarnos de que NGINX está instalado correctamente, revisamos su estado:</p>
+<p>sudo systemctl status nginx</p>
+<p>Si NGINX no está activo, lo iniciamos manualmente:</p>
+<p>sudo systemctl start nginx</p>
+<p>Y para asegurarnos de que se inicie automáticamente el sistema:</p>
+<p>sudo systemctl enable nginx</p>
+<p>![][image57]</p>
+<p>También verificamos que el <strong>Grupo de Seguridad (Security Group)</strong> de la instancia en AWS tiene las reglas correctas:</p>
+<ul>
+<li><strong>Puerto 80 (HTTP)</strong> → Permitir tráfico entrante.</li>
+<li><strong>Puerto 443 (HTTPS)</strong> → Permitir tráfico entrante.</li>
+</ul>
+<p>![][image58]</p>
+<p>Habilitamos HTTPS con Let&rsquo;s Encrypt</p>
+<p>sudo apt install certbot python3-certbot-nginx -y</p>
+<p>sudo certbot --nginx -d darkkingdragon.com -d <a href="http://www.darkkingdragon.com">www.darkkingdragon.com</a></p>
+<p>![][image59]</p>
+<p>![][image60]</p>
+<p>Renovamos automáticamente el certificado</p>
+<p>![][image61]</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/ProyectoAlpha-Final/posts/backup/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-02-09 17:09:32.293548 &#43;0100 CET m=&#43;0.092500301">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
