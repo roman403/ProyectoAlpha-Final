@@ -24,7 +24,7 @@ Creamos las máquinas en AWS y usamos la contraseña generada para conectarnos m
 
 Una vez conectados, instalamos el servicio DNS desde **Roles y Características**.
 
-![Instalación de DNS](https://roman403.github.io/ProyectoAlpha/dns2.png)
+![Instalación de DNS](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -32,7 +32,7 @@ Una vez conectados, instalamos el servicio DNS desde **Roles y Características*
 
 Nos dirigimos a **Herramientas Administrativas** y seleccionamos **DNS**.
 
-![Herramientas Administrativas - DNS](https://roman403.github.io/ProyectoAlpha/dns3.png)
+![Herramientas Administrativas - DNS](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -40,7 +40,7 @@ Nos dirigimos a **Herramientas Administrativas** y seleccionamos **DNS**.
 
 Creamos una **Zona Nueva Primaria**.
 
-![Crear zona primaria](https://roman403.github.io/ProyectoAlpha/dns4.png)
+![Crear zona primaria](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -48,7 +48,7 @@ Creamos una **Zona Nueva Primaria**.
 
 Configuramos el dominio deseado.
 
-![Configuración del dominio](https://roman403.github.io/ProyectoAlpha/dns5.png)
+![Configuración del dominio](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -56,7 +56,7 @@ Configuramos el dominio deseado.
 
 Creamos 4 alias que representarán las máquinas que usaremos en el reto (utilizando las IPs privadas).
 
-![Crear alias](https://roman403.github.io/ProyectoAlpha/dns6.png)
+![Crear alias](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -64,7 +64,7 @@ Creamos 4 alias que representarán las máquinas que usaremos en el reto (utiliz
 
 Añadimos un servidor secundario, configurado para realizar la transferencia solo a dicho equipo por motivos de seguridad. Este servidor será una máquina con **Ubuntu 24**.
 
-![Configuración del servidor secundario](https://roman403.github.io/ProyectoAlpha/dns7.png)
+![Configuración del servidor secundario](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
@@ -72,7 +72,7 @@ Añadimos un servidor secundario, configurado para realizar la transferencia sol
 
 Modificamos la configuración del DNS en la máquina primaria y realizamos una comprobación para validar los cambios.
 
-![Cambio y comprobación del DNS](https://roman403.github.io/ProyectoAlpha/dns8.png)
+![Cambio y comprobación del DNS](https://roman403.github.io/ProyectoAlpha-Final/)
 
 ---
 
