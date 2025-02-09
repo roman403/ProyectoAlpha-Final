@@ -7,3 +7,5 @@ title: "Arquitectura"
 Esta es la infraestructura usada en este proyecto
 
 Se realizo en AWS con las siguientes máquinas
+
+![](https://roman403.github.io/ProyectoAlpha-Final/infraestructura.jfif)
