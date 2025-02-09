@@ -21,7 +21,7 @@ Tenemos dos máquinas que darán servicio en internet, serán un windows, permit
 
 En nuestra red interna un redhat que tiene de servicios, wordpress, moodle y  nginx.
 
-# REDHAT {#redhat}
+
 
 # S.O. {#s.o.}
 
@@ -30,22 +30,32 @@ Hemos elegido varios S.O. cada uno centrado en una tarea para un mejor rendimien
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/imagen3.png)
 
+# Red Hat Enterprise Linux 
+
+En esta instancia tendremos el Moodel y Nginx interno
 
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/redhat.png)
 
 
+# Windows Server 2022
 
+Esta instancia actuará de Dns primario 
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/dnswindows.png)
 
 
 
+# Linux/UNIX Ubuntu24 
+
+Contiene el nginx externo, tambien actuará de Dns secundario 
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/externanginx.png)
 
 
+# Linux/UNIX Ubuntu 24
 
+En está instacia está el sofware del OpenVpn
 
-![](https://roman403.github.io/ProyectoAlpha-Final/vpn linux.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/vpnlinux.png)
 

@@ -100,14 +100,21 @@ Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip f
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen2.png" alt=""></p>
 <p>Tenemos dos máquinas que darán servicio en internet, serán un windows, permitiendo usar su resolución de nombres para nuestro dominio y un mail para que nuestros empleados y nuestros clientes puedan hacer uso de él. Y la otra maquina que dara servicio de un segundo DNS para evitar sobrecargar el primario, teniendo el todas las ip de la red interna para poder hacer buen uso, además contara con un nginx que dará servicio a nuestra página en internet. Ademas de eso tendremos un ubuntu que hace servicio de VPN</p>
 <p>En nuestra red interna un redhat que tiene de servicios, wordpress, moodle y  nginx.</p>
-<h1 id="redhat">REDHAT</h1>
 <h1 id="s.o.">S.O.</h1>
 <p>Hemos elegido varios S.O. cada uno centrado en una tarea para un mejor rendimiento y una mayor redundancia. Así evitamos que si una maquina se cae sea lo que perjudique a varios servicios a la vez.</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen3.png" alt=""></p>
+<h1 id="red-hat-enterprise-linux">Red Hat Enterprise Linux</h1>
+<p>En esta instancia tendremos el Moodel y Nginx interno</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/redhat.png" alt=""></p>
+<h1 id="windows-server-2022">Windows Server 2022</h1>
+<p>Esta instancia actuará de Dns primario</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/dnswindows.png" alt=""></p>
+<h1 id="linuxunix-ubuntu24">Linux/UNIX Ubuntu24</h1>
+<p>Contiene el nginx externo, tambien actuará de Dns secundario</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/externanginx.png" alt=""></p>
-<p>![](<a href="https://roman403.github.io/ProyectoAlpha-Final/vpn">https://roman403.github.io/ProyectoAlpha-Final/vpn</a> linux.png)</p>
+<h1 id="linuxunix-ubuntu-24">Linux/UNIX Ubuntu 24</h1>
+<p>En está instacia está el sofware del OpenVpn</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/vpnlinux.png" alt=""></p>
 
 
 		
@@ -124,7 +131,7 @@ Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip f
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-09 18:32:03.477639 &#43;0100 CET m=&#43;0.093140901">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-09 18:38:34.0534437 &#43;0100 CET m=&#43;0.099776501">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
