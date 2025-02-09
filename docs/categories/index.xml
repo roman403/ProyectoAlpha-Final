@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ALPHA</title>
-    <link>https://github.com/roman403/ProyectoAlpha-Final/categories/</link>
+    <link>https://roman403.github.io/ProyectoAlpha-Final/categories/</link>
     <description>Recent content in Categories on ALPHA</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="https://github.com/roman403/ProyectoAlpha-Final/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roman403.github.io/ProyectoAlpha-Final/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
