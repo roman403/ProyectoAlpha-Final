@@ -8,14 +8,12 @@
   <meta property="og:site_name" content="ALPHA">
   <meta property="og:title" content="Nginxubuntu">
   <meta property="og:description" content="Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos
-![][image56]
 Verificamos la instalación Para asegurarnos de que NGINX está instalado correctamente, revisamos su estado:
 sudo systemctl status nginx
 Si NGINX no está activo, lo iniciamos manualmente:
 sudo systemctl start nginx
 Y para asegurarnos de que se inicie automáticamente el sistema:
 sudo systemctl enable nginx
-![][image57]
 También verificamos que el Grupo de Seguridad (Security Group) de la instancia en AWS tiene las reglas correctas:">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
@@ -99,7 +97,8 @@ También verificamos que el Grupo de Seguridad (Security Group) de la instancia 
 		
 
 		<p>Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos</p>
-<p>![][image56]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu1.png" alt=""></p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu2.png" alt=""></p>
 <h3 id="verificamos-la-instalación"><strong>Verificamos la instalación</strong></h3>
 <p>Para asegurarnos de que NGINX está instalado correctamente, revisamos su estado:</p>
 <p>sudo systemctl status nginx</p>
@@ -107,20 +106,20 @@ También verificamos que el Grupo de Seguridad (Security Group) de la instancia 
 <p>sudo systemctl start nginx</p>
 <p>Y para asegurarnos de que se inicie automáticamente el sistema:</p>
 <p>sudo systemctl enable nginx</p>
-<p>![][image57]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu3.png" alt=""></p>
 <p>También verificamos que el <strong>Grupo de Seguridad (Security Group)</strong> de la instancia en AWS tiene las reglas correctas:</p>
 <ul>
 <li><strong>Puerto 80 (HTTP)</strong> → Permitir tráfico entrante.</li>
 <li><strong>Puerto 443 (HTTPS)</strong> → Permitir tráfico entrante.</li>
 </ul>
-<p>![][image58]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu4.png" alt=""></p>
 <p>Habilitamos HTTPS con Let&rsquo;s Encrypt</p>
 <p>sudo apt install certbot python3-certbot-nginx -y</p>
 <p>sudo certbot --nginx -d darkkingdragon.com -d <a href="http://www.darkkingdragon.com">www.darkkingdragon.com</a></p>
-<p>![][image59]</p>
-<p>![][image60]</p>
+<p>![]<img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu5.png" alt=""></p>
+<p>![]<img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu6.png" alt=""></p>
 <p>Renovamos automáticamente el certificado</p>
-<p>![][image61]</p>
+<p>![]<img src="https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu7.png" alt=""></p>
 
 
 		
@@ -137,7 +136,7 @@ También verificamos que el Grupo de Seguridad (Security Group) de la instancia 
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-09 17:09:32.293548 &#43;0100 CET m=&#43;0.092500301">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-09 17:13:30.5391738 &#43;0100 CET m=&#43;0.091367201">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
