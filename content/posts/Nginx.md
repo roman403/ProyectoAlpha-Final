@@ -12,7 +12,8 @@ La instalación de Nginx será en la máquina de REDHAT.
 
 Nos conectamos a la máquina mediante SSH. Y luego mediante el agent ssh entramos en la maquina redhat al no poder conectarnos directamente. Lo primero que hare sera instalar el nginx.
 
-![][https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX4.png]
+![](https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX4.png)
+
 
 Ahora deberemos cambiar la configuración de SELinux a 0 para poder evitar cualquier fallo.
 
