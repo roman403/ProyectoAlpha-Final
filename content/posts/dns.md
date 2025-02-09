@@ -4,7 +4,6 @@ draft : false
 title : "DNS"
 ---
 
-##DNS
 
 Primer paso crear las máquinas en AWS y con la contraseña generada nos conectamos usando el acceso remoto de Windows poniendo de usuario Administrator y la ip pública de la máquina
 
