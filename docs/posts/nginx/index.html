@@ -10,9 +10,7 @@
   <meta property="og:description" content="Nginx interno Configuración La instalación de Nginx será en la máquina de REDHAT.
 Nos conectamos a la máquina mediante SSH. Y luego mediante el agent ssh entramos en la maquina redhat al no poder conectarnos directamente. Lo primero que hare sera instalar el nginx.
 Ahora deberemos cambiar la configuración de SELinux a 0 para poder evitar cualquier fallo.
-![][image5]
 Enviamos los documentos html con el comando scp.
-![][image6]
 Ahora iremos al fichero de configuración de nginx.">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
@@ -101,55 +99,57 @@ Ahora iremos al fichero de configuración de nginx.">
 <p>Nos conectamos a la máquina mediante SSH. Y luego mediante el agent ssh entramos en la maquina redhat al no poder conectarnos directamente. Lo primero que hare sera instalar el nginx.</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX4.png" alt=""></p>
 <p>Ahora deberemos cambiar la configuración de SELinux a 0 para poder evitar cualquier fallo.</p>
-<p>![][image5]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX5.png" alt=""></p>
 <p>Enviamos los documentos html con el comando scp.</p>
-<p>![][image6]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX6.png" alt=""></p>
 <p>Ahora iremos al fichero de configuración de nginx.</p>
 <p>En el configuraremos también varios usuarios, siendo los 5 integrantes del grupo (en verdad deberían de ser miembros del departamento de informática).</p>
-<p>![][image7]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX7.png" alt=""></p>
 <p>Para poder usar el html tendremos que descargar la herramienta zip, esto es debido a que redhat no la tiene por defecto.</p>
-<p>![][image8]</p>
-<p>![][image9]</p>
-<p>Ahora hay que crear la carpeta donde estarán nuestros html.![][image10]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX8.png" alt=""></p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX9.png" alt=""></p>
+<p>Ahora hay que crear la carpeta donde estarán nuestros html.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX10.png" alt=""></p>
 <p>Para que todo funcione ahora deberemos activar de manera por defecto nginx.</p>
 <p>Ahora en caso de que se apague el servidor nginx se iniciará sin tener que usar el start.</p>
-<p>![][image11]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX11.png" alt=""></p>
 <p>Para acceder tendremos que primero conectarnos por vpn. Las reglas de entrada de AWS ya están cambiadas.</p>
-<p>![][image12]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX12.png" alt=""></p>
 <h3 id="https">HTTPS</h3>
 <p>Tenemos que crear un par de claves para añadirlo en la configuración.</p>
-<p>![][image13]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX13.png" alt=""></p>
 <h2 id="nginx-externo">Nginx externo</h2>
 <h3 id="configuración">Configuración</h3>
 <p>La instalación de Nginx será en la máquina de Ubuntu.</p>
 <p>Nos conectamos a la máquina mediante SSH.</p>
-<p>![][image14]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX14.png" alt=""></p>
 <p>Y para instalarlo usaremos el comando apt install</p>
 <h3 id="heading"></h3>
-<p>![][image15]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX15.png" alt=""></p>
 <p>Para demostrar que el orden de los factores no altera el producto aquí usaremos el enabled antes que el start, pues el enable solo afecta al arranque y el start al uso actual.</p>
-<p>Ahora si hacemos un status veremos como el servidor está encendido. ![][image16]</p>
+<p>Ahora si hacemos un status veremos como el servidor está encendido.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX16.png" alt=""></p>
 <p>Para ahora que todo el mundo pueda acceder habilitamos en las reglas de entrada el puerto 80.</p>
-<p>![][image17]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX17.png" alt=""></p>
 <p>Podemos ver como ya están abiertos puertos como el 443 para el https y otros puertos para otros servicios.</p>
 <p>Al ser un servidor que sirve a la red le decimos que escuche para todas las ip y en cualquier red.</p>
 <p>Al buscar nuestra ip nos toparemos con la página predeterminada.</p>
 <p>Editamos el fichero de configuración de Nginx del virtual host sin TLS.</p>
 <h3 id="https-1">HTTPS</h3>
 <p>Voy a instalar nano en red hat para editar</p>
-<p>![][image18]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX18.png" alt=""></p>
 <p>Creamos un directorio /etc/nginx/ssl</p>
-<p>![][image19]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX19.png" alt=""></p>
 <p>Para obtener un certificado oficial usamos un proveedor de certificados SSL como Let’s Encrypt.</p>
 <p>Para Let’s Encrypt instalamos el cliente certbot y configuramos automaticamente SSL</p>
-<p>![][image20]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX20.png" alt=""></p>
 <p>Configuración de Nginx para HTTPS</p>
 <p>El el archivo /etc/nginx/nginx.conf editamos el bloque server para https.</p>
-<p>![][image21]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX21.png" alt=""></p>
 <p>Al usar un certificado oficial como Let’s Encrypt ajustamos las rutas</p>
-<p>![][image22]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX22.png" alt=""></p>
 <p>También redirigimos HTTP a HTTPS</p>
-<p>![][image23]</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX23.png" alt=""></p>
 <p>Guardamos y reiniciamos Nginx</p>
 
 
@@ -168,7 +168,7 @@ Ahora iremos al fichero de configuración de nginx.">
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-09 16:07:42.642853 &#43;0100 CET m=&#43;0.090306701">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-09 16:12:12.2374135 &#43;0100 CET m=&#43;0.092863901">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
