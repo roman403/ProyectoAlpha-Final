@@ -4,80 +4,77 @@ draft : false
 title : "DNS"
 ---
 
-El servidor Dns primario es un Windows
+DNS
 
-# Configuración de DNS en AWS
+Primer paso crear las máquinas en AWS y con la contraseña generada nos conectamos usando el acceso remoto de Windows poniendo de usuario Administrator y la ip pública de la máquina
 
-## Paso 1: Crear las máquinas en AWS
+ 
 
-Creamos las máquinas en AWS y usamos la contraseña generada para conectarnos mediante acceso remoto de Windows. Usamos el usuario `Administrator` y la IP pública de la máquina.
+Se ha usado Windows Server 2022
 
-**Sistema Operativo:** Windows Server 2022
+![](https://roman403.github.io/ProyectoAlpha-Final/dn1.png)
 
-![a](https://roman403.github.io/ProyectoAlpha-Final/Grub01.jpg)
+ 
+ Una vez nos hemos conectado, hay que instalar el DNS en roles y características
+
+ ![](https://roman403.github.io/ProyectoAlpha-Final/dn2.png)
 
 
+Nos metemos en herramientas administrativas y dns
 
----
+ ![](https://roman403.github.io/ProyectoAlpha-Final/dn3.png)
 
-## Paso 2: Instalación del DNS
 
-Una vez conectados, instalamos el servicio DNS desde **Roles y Características**.
+ Creamos una zona nueva primaria
 
-![Instalación de DNS](https://roman403.github.io/ProyectoAlpha-Final/)
+![](https://roman403.github.io/ProyectoAlpha-Final/dn4.png)
 
----
+Con este dominio
 
-## Paso 3: Acceso a Herramientas Administrativas
+![](https://roman403.github.io/ProyectoAlpha-Final/dn5.png)
 
-Nos dirigimos a **Herramientas Administrativas** y seleccionamos **DNS**.
+Creo los registros que serán las máquinas que usaremos en el reto configuración directa
 
-![Herramientas Administrativas - DNS](https://roman403.github.io/ProyectoAlpha-Final/)
+![](https://roman403.github.io/ProyectoAlpha-Final/dn6.png)
 
----
+Configuración para la resolución inversa 
 
-## Paso 4: Crear una zona primaria
+![](https://roman403.github.io/ProyectoAlpha-Final/dn7.png)
 
-Creamos una **Zona Nueva Primaria**.
+Para la transferencia al secundario que resuelva de manera inversa, añado la ip del ubuntu
 
-![Crear zona primaria](https://roman403.github.io/ProyectoAlpha-Final/)
+solo le hará la transferencia a ese equipo para más seguridad que será el Ubuntu24
 
----
+![](https://roman403.github.io/ProyectoAlpha-Final/dn8.png)
 
-## Paso 5: Configurar el dominio
+Cambio el dns de la máquina primaria y realizó una comprobación
 
-Configuramos el dominio deseado.
+Resolución inversa
 
-![Configuración del dominio](https://roman403.github.io/ProyectoAlpha-Final/)
+![](https://roman403.github.io/ProyectoAlpha-Final/dn9.png)
 
----
+Resolución directa
 
-## Paso 6: Crear alias para las máquinas
+![](https://roman403.github.io/ProyectoAlpha-Final/dn10.png)
 
-Creamos 4 alias que representarán las máquinas que usaremos en el reto (utilizando las IPs privadas).
+**Configuración máquina DNS secundaria Ubuntu** 
 
-![Crear alias](https://roman403.github.io/ProyectoAlpha-Final/)
+Nos conectamos a la máquina secundaria será un ubuntu 
 
----
+Cambiamos el dns y ponemos la ip del primario
 
-## Paso 7: Configurar un servidor secundario
+Instalamos el dns 
 
-Añadimos un servidor secundario, configurado para realizar la transferencia solo a dicho equipo por motivos de seguridad. Este servidor será una máquina con **Ubuntu 24**.
+Configuración del ubuntu
 
-![Configuración del servidor secundario](https://roman403.github.io/ProyectoAlpha-Final/)
+![](https://roman403.github.io/ProyectoAlpha-Final/dn11.png)
 
----
+Comprobación del funcionamiento de la resolución en el DNS secundario
 
-## Paso 8: Cambiar el DNS de la máquina primaria y realizar comprobaciones
+Resolución Directa
 
-Modificamos la configuración del DNS en la máquina primaria y realizamos una comprobación para validar los cambios.
+![](https://roman403.github.io/ProyectoAlpha-Final/dn12.png)
 
-![Cambio y comprobación del DNS](https://roman403.github.io/ProyectoAlpha-Final/)
+Resolución Inversa
 
----
-
-## Paso 9: Configuración del servidor secundario
-
-1. Nos conectamos a la máquina secundaria, que será un servidor con **Ubuntu 24**.
-2. Cambiamos la configuración del DNS, apuntando a la IP de la máquina primaria.
-3. Instalamos el servicio DNS en Ubuntu.
+![](https://roman403.github.io/ProyectoAlpha-Final/dn13.png)
