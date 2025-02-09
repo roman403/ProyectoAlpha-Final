@@ -10,7 +10,9 @@ title : "NGINX"
 
 La instalación de Nginx será en la máquina de REDHAT.
 
-Nos conectamos a la máquina mediante SSH. Y luego mediante el agent ssh entramos en la maquina redhat al no poder conectarnos directamente. Lo primero que hare sera instalar el nginx.![][image4]
+Nos conectamos a la máquina mediante SSH. Y luego mediante el agent ssh entramos en la maquina redhat al no poder conectarnos directamente. Lo primero que hare sera instalar el nginx.
+
+![][https://roman403.github.io/ProyectoAlpha-Final/ImagenNGX4.png]
 
 Ahora deberemos cambiar la configuración de SELinux a 0 para poder evitar cualquier fallo.
 
@@ -22,21 +24,34 @@ Enviamos los documentos html con el comando scp.
 
 Ahora iremos al fichero de configuración de nginx.
 
-En el configuraremos también varios usuarios, siendo los 5 integrantes del grupo (en verdad deberían de ser miembros del departamento de informática).![][image7]
+En el configuraremos también varios usuarios, siendo los 5 integrantes del grupo (en verdad deberían de ser miembros del departamento de informática).
 
-Para poder usar el html tendremos que descargar la herramienta zip, esto es debido a que redhat no la tiene por defecto.![][image8]![][image9]
+![][image7]
+
+Para poder usar el html tendremos que descargar la herramienta zip, esto es debido a que redhat no la tiene por defecto.
+
+![][image8]
+
+
+![][image9]
 
 Ahora hay que crear la carpeta donde estarán nuestros html.![][image10]
 
 Para que todo funcione ahora deberemos activar de manera por defecto nginx.
 
-Ahora en caso de que se apague el servidor nginx se iniciará sin tener que usar el start.![][image11]
+Ahora en caso de que se apague el servidor nginx se iniciará sin tener que usar el start.
 
-Para acceder tendremos que primero conectarnos por vpn. Las reglas de entrada de AWS ya están cambiadas.![][image12]
+![][image11]
+
+Para acceder tendremos que primero conectarnos por vpn. Las reglas de entrada de AWS ya están cambiadas.
+
+![][image12]
 
 ### HTTPS {#https}
 
-Tenemos que crear un par de claves para añadirlo en la configuración.![][image13]	
+Tenemos que crear un par de claves para añadirlo en la configuración.
+
+![][image13]	
 
 ## Nginx externo {#nginx-externo}
 
@@ -44,7 +59,9 @@ Tenemos que crear un par de claves para añadirlo en la configuración.![][image
 
 La instalación de Nginx será en la máquina de Ubuntu.
 
-Nos conectamos a la máquina mediante SSH. ![][image14]
+Nos conectamos a la máquina mediante SSH.
+
+ ![][image14]
 
 Y para instalarlo usaremos el comando apt install
 
