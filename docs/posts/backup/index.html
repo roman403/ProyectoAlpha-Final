@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		
+		
+		
+		<meta property="og:url" content="https://roman403.github.io/ProyectoAlpha-Final/posts/backup/">
+  <meta property="og:site_name" content="ALPHA">
+  <meta property="og:title" content="Backup">
+  <meta property="og:description" content="BACKUP Para hacer backup de las máquinas que tenemos instaladas en AWS, podemos utilizar el servicio AWS Backup.
+![][image62]
+Iniciamos sesión en tu cuenta de AWS y abrimos la consola de administración.
+Seleccionamos “Servicios” en la barra superior y escribimos “AWS Backup” en la barra de búsqueda.
+Hacemos clic en “Crear plan de copia de seguridad”.
+![][image63]
+Configuramos el plan de backup según nuestras necesidades, como la frecuencia de las copias de seguridad y la retención de datos. En nuestro caso haremos backup de todas las máquinas">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-09T16:58:45+01:00">
+    <meta property="article:modified_time" content="2025-02-09T16:58:45+01:00">
+
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Backup &middot; ALPHA</title>
+
+		
+		<link rel="stylesheet" href="/ProyectoAlpha-Final/css/style.css">
+		<link rel="stylesheet" href="/ProyectoAlpha-Final/css/fonts.css">
+		
+		<link rel="icon" href="/ProyectoAlpha-Final/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/ProyectoAlpha-Final/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/ProyectoAlpha-Final/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/ProyectoAlpha-Final/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="ALPHA" />
+
+		<script src="/ProyectoAlpha-Final/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/ProyectoAlpha-Final/">
+					
+						<h2 class="nav-title">ALPHA</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/ProyectoAlpha-Final/arquitectura/">
+                
+                <span>arquitectura</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/ProyectoAlpha-Final/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2025-02-09 16:58:45 &#43;0100 CET">February 9, 2025</time>
+</div>
+
+		<h1 class="post-title">Backup</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="backup">BACKUP</h2>
+<p>Para hacer backup de las máquinas que tenemos instaladas en AWS, podemos utilizar el servicio AWS Backup.</p>
+<p>![][image62]</p>
+<p>Iniciamos sesión en tu cuenta de AWS y abrimos la consola de administración.</p>
+<p>Seleccionamos &ldquo;Servicios&rdquo; en la barra superior y escribimos &ldquo;AWS Backup&rdquo; en la barra de búsqueda.</p>
+<p>Hacemos clic en &ldquo;Crear plan de copia de seguridad&rdquo;.</p>
+<p>![][image63]</p>
+<p>Configuramos el plan de backup según nuestras necesidades, como la frecuencia de las copias de seguridad y la retención de datos. En nuestro caso haremos backup de todas las máquinas</p>
+<p>![][image64]![][image65]</p>
+<p>La copia la haremos semanalmente, los sábados a las 00:30</p>
+<p>![][image66]</p>
+<p>La copia de seguridad la podemos alojar dónde queramos, en este caso en Madrid</p>
+<p>![][image67]</p>
+<p>Pulsamos en crear plan.</p>
+<p>Seleccionamos las máquinas o recursos que deseamos incluir en el plan de backup. En este caso todas las instancias</p>
+<p>Elegiremos un rol IAM</p>
+<p>![][image68]</p>
+<p>Asignamos recursos</p>
+<p>![][image69]</p>
+<p>Guardamos el plan y nos aseguramos de que esté activado</p>
+<p>![][image70]![][image71]![][image72]</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/ProyectoAlpha-Final/posts/seguridad/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-02-09 16:59:22.8825671 &#43;0100 CET m=&#43;0.088560901">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
