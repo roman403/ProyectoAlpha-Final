@@ -8,7 +8,7 @@ title : "Backup"
 
 Para hacer backup de las máquinas que tenemos instaladas en AWS, podemos utilizar el servicio AWS Backup.
 
-![][image62]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup1.png)
 
 Iniciamos sesión en tu cuenta de AWS y abrimos la consola de administración.
 
@@ -16,19 +16,23 @@ Seleccionamos "Servicios" en la barra superior y escribimos "AWS Backup" en la b
 
 Hacemos clic en "Crear plan de copia de seguridad".
 
-![][image63]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup2.png)
 
 Configuramos el plan de backup según nuestras necesidades, como la frecuencia de las copias de seguridad y la retención de datos. En nuestro caso haremos backup de todas las máquinas
 
-![][image64]![][image65]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup3.png)
+
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/backup4.png)
 
 La copia la haremos semanalmente, los sábados a las 00:30
 
-![][image66]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup5.png)
 
 La copia de seguridad la podemos alojar dónde queramos, en este caso en Madrid
 
-![][image67]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup6.png)
 
 Pulsamos en crear plan.
 
@@ -36,12 +40,16 @@ Seleccionamos las máquinas o recursos que deseamos incluir en el plan de backup
 
 Elegiremos un rol IAM
 
-![][image68]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup7.png)
 
 Asignamos recursos
 
-![][image69]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup8.png)
 
 Guardamos el plan y nos aseguramos de que esté activado
 
-![][image70]![][image71]![][image72]
+![](https://roman403.github.io/ProyectoAlpha-Final/backup9.png)
+
+![](https://roman403.github.io/ProyectoAlpha-Final/backup10.png)
+
+![](https://roman403.github.io/ProyectoAlpha-Final/backup11.png)
