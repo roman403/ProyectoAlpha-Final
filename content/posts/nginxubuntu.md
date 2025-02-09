@@ -1,7 +1,7 @@
 ---
 date : 2025-02-09T17:08:25+01:00
 draft : false
-title : "Nginxubuntu"
+title : "Nginx Ubuntu"
 ---
 
 Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos
@@ -39,10 +39,10 @@ sudo apt install certbot python3-certbot-nginx \-y
 
 sudo certbot \--nginx \-d darkkingdragon.com \-d [www.darkkingdragon.com](http://www.darkkingdragon.com)
 
-![]![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu5.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu5.png)
 
-![]![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu6.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu6.png)
 
 Renovamos automáticamente el certificado
 
-![]![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu7.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu7.png)
