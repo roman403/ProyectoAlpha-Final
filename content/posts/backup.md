@@ -4,7 +4,6 @@ draft : false
 title : "Backup"
 ---
 
-## BACKUP
 
 Para hacer backup de las máquinas que tenemos instaladas en AWS, podemos utilizar el servicio AWS Backup.
 

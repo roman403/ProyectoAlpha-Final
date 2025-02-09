@@ -4,7 +4,6 @@ draft : false
 title : "Wordpress"
 ---
 
-## Wordpress {#wordpress}
 
 ### Instalacion {#instalacion}
 

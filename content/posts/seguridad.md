@@ -4,7 +4,6 @@ draft : false
 title : "Seguridad"
 ---
 
-# Seguridad
 
 ## Conexión segura
 
