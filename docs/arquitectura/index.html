@@ -8,7 +8,9 @@
   <meta property="og:site_name" content="ALPHA">
   <meta property="og:title" content="Arquitectura">
   <meta property="og:description" content="Esta es la infraestructura usada en este proyecto
-Se realizo en AWS con las siguientes máquinas">
+Se realizo en AWS con las siguientes máquinas
+Estructura de la red Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip flotante mediante el agente ssh.
+Tenemos dos máquinas que darán servicio en internet, serán un windows, permitiendo usar su resolución de nombres para nuestro dominio y un mail para que nuestros empleados y nuestros clientes puedan hacer uso de él. Y la otra maquina que dara servicio de un segundo DNS para evitar sobrecargar el primario, teniendo el todas las ip de la red interna para poder hacer buen uso, además contara con un nginx que dará servicio a nuestra página en internet. Ademas de eso tendremos un ubuntu que hace servicio de VPN">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
     <meta property="article:published_time" content="2025-02-09T12:15:37+01:00">
@@ -92,6 +94,18 @@ Se realizo en AWS con las siguientes máquinas">
 		<p>Esta es la infraestructura usada en este proyecto</p>
 <p>Se realizo en AWS con las siguientes máquinas</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/infraestructura.jfif" alt=""></p>
+<h1 id="estructura-de-la-red">Estructura de la red</h1>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen1.png" alt="">
+Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip flotante mediante el agente ssh.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen2.png" alt=""></p>
+<p>Tenemos dos máquinas que darán servicio en internet, serán un windows, permitiendo usar su resolución de nombres para nuestro dominio y un mail para que nuestros empleados y nuestros clientes puedan hacer uso de él. Y la otra maquina que dara servicio de un segundo DNS para evitar sobrecargar el primario, teniendo el todas las ip de la red interna para poder hacer buen uso, además contara con un nginx que dará servicio a nuestra página en internet. Ademas de eso tendremos un ubuntu que hace servicio de VPN</p>
+<p>En nuestra red interna un redhat que tiene de servicios, wordpress, moodle y  nginx.</p>
+<h1 id="redhat">REDHAT</h1>
+<h1 id="s.o.">S.O.</h1>
+<p>Hemos elegido varios S.O. cada uno centrado en una tarea para un mejor rendimiento y una mayor redundancia. Así evitamos que si una maquina se cae sea lo que perjudique a varios servicios a la vez.</p>
+<h2 id="redhat-1">REDHAT</h2>
+<p>Lo lanzamos con AWS. La configuración por ahora será la default y le iremos modificando mientras progresa el proyecto.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen3.png" alt=""></p>
 
 
 		
@@ -108,7 +122,7 @@ Se realizo en AWS con las siguientes máquinas">
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-09 18:17:37.2852077 &#43;0100 CET m=&#43;0.092712701">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-09 18:25:52.4500403 &#43;0100 CET m=&#43;0.099344801">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
