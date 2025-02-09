@@ -10,24 +10,24 @@ title : "Wordpress"
 
 Para su instalacion deberemos instalar un servidor mariadb y el php (seria lo suyo tener tambien el paquete de php-pfm)
 
-![][image24]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd1.png)
 
-![][image25]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd2.png)
 
-![][image26]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd3.png)
 
-![][image27]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd4.png)
 
 Ahora deberemos poner tanto el php-fpm y el mariadb tanto enabled cómo iniciarlos.
 
-![][image28]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd5.png)
 
 Ahora en mariadb deberemos crear una base de datos y un usuario para poder hacer que wordpress funcione.
 
-![][image29]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd6.png)
 
 Ahora wordpress cuenta con un usuario para poder conectarse y realizar sus funciones, ahora vamos a configurar nginx para que pueda servir la pagina php de wordpress.
 
-![][image30]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd7.png)
 
-![][image31]
+![](https://roman403.github.io/ProyectoAlpha-Final/imagenwd8.png)
