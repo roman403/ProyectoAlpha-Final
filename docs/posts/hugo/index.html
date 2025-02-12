@@ -9,7 +9,8 @@
   <meta property="og:title" content="HUGO">
   <meta property="og:description" content="Documentación con Hugo y GitHub Pages 1. Instalar Hugo En Debian:
 sudo apt update sudo apt install hugo -y Verifica la instalación:
-hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd mi-documentacion 3. Agregar el tema hugo-book El tema hugo-book es una excelente opción para documentación porque ofrece una navegación clara y estructurada, con un diseño minimalista y optimizado para la lectura. Además, soporta búsqueda integrada y un formato tipo libro que facilita la organización del contenido.">
+hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd mi-documentacion 3. Agregar el tema hugo-tale El tema tale es una excelente opción para documentación porque ofrece una navegación clara y estructurada.
+git init git submodule add https://github.com/alex-shpak/hugo-tale.git themes/hugo-tale Configura el tema en hugo.toml:">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -101,36 +102,36 @@ hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd 
 </span></span></code></pre></div><h2 id="2-crear-un-nuevo-sitio-con-hugo">2. Crear un nuevo sitio con Hugo</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site mi-documentacion
 </span></span><span style="display:flex;"><span>cd mi-documentacion
-</span></span></code></pre></div><h2 id="3-agregar-el-tema-hugo-book">3. Agregar el tema <code>hugo-book</code></h2>
-<p>El tema <code>hugo-book</code> es una excelente opción para documentación porque ofrece una navegación clara y estructurada, con un diseño minimalista y optimizado para la lectura. Además, soporta búsqueda integrada y un formato tipo libro que facilita la organización del contenido.</p>
+</span></span></code></pre></div><p><img src="https://roman403.github.io/ProyectoAlpha-Final/temahugo.png" alt=""></p>
+<h2 id="3-agregar-el-tema-hugo-tale">3. Agregar el tema <code>hugo-tale</code></h2>
+<p>El tema <code>tale</code> es una excelente opción para documentación porque ofrece una navegación clara y estructurada.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
-</span></span><span style="display:flex;"><span>git submodule add https://github.com/alex-shpak/hugo-book.git themes/hugo-book
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/alex-shpak/hugo-tale.git themes/hugo-tale
 </span></span></code></pre></div><p>Configura el tema en <code>hugo.toml</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;theme = &#34;hugo-book&#34;&#39;</span> &gt;&gt; hugo.toml
-</span></span></code></pre></div><h2 id="4-estructurar-la-documentación-en-md">4. Estructurar la documentación en <code>.md</code></h2>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/temahugo2.png" alt=""></p>
+<h2 id="4-estructurar-la-documentación-en-md">4. Estructurar la documentación en <code>.md</code></h2>
 <p>Crea el directorio <code>content/docs</code> y agrega un archivo Markdown:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p content/docs
-</span></span><span style="display:flex;"><span>hugo new docs/introduccion.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new docs/introduccion.md
 </span></span></code></pre></div><p>Edita <code>content/docs/introduccion.md</code> y agrega contenido:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span>title: &#34;Introducción&#34;
-</span></span><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># Bienvenido a la Documentación
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Este es un ejemplo de documentación con Hugo.
-</span></span></code></pre></div><h2 id="5-configurar-hugotoml-para-documentación">5. Configurar <code>hugo.toml</code> para documentación</h2>
-<p>Edita el archivo <code>hugo.toml</code> y agrega:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://tuusuario.github.io/mi-documentacion/&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;es&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;Mi Documentación&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;hugo-book&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">BookTheme</span> = <span style="color:#e6db74">&#39;light&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">BookSection</span> = <span style="color:#e6db74">&#39;docs&#39;</span>
-</span></span></code></pre></div><h2 id="6-compilar-el-sitio-y-probar-localmente">6. Compilar el sitio y probar localmente</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/contenidohugo.png" alt=""></p>
+<h1 id="bienvenido-a-la-documentación">Bienvenido a la Documentación</h1>
+<p>Este es un ejemplo de documentación con Hugo.</p>
+<pre tabindex="0"><code>
+## 5. Configurar `hugo.toml` para documentación
+
+Edita el archivo `hugo.toml` y agrega:
+
+```toml
+baseURL = &#39;https://roman403.github.io/ProyectoAlpha-Final/&#39;
+languageCode = &#39;es&#39;
+title = &#39;Mi Documentación&#39;
+theme = &#39;hugo-tale&#39;
+
+[params]
+  BookTheme = &#39;light&#39;
+  BookSection = &#39;docs&#39;
+</code></pre><h2 id="6-compilar-el-sitio-y-probar-localmente">6. Compilar el sitio y probar localmente</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -d
 </span></span></code></pre></div><p>Visítalo en <code>http://localhost:1313/</code>.</p>
 <h2 id="7-subir-a-github">7. Subir a GitHub</h2>
 <ol>
@@ -144,7 +145,7 @@ hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd 
 </span></span><span style="display:flex;"><span>git push -u origin main
 </span></span></code></pre></div><h2 id="8-publicar-la-documentación-en-github-pages">8. Publicar la documentación en GitHub Pages</h2>
 <p>GitHub Pages requiere que los archivos generados estén en la rama <code>gh-pages</code>. Para hacerlo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -D -d docs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -d docs
 </span></span></code></pre></div><p>Agrega <code>docs</code> como directorio de publicación en <code>hugo.toml</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
 </span></span></code></pre></div><p>Sube los archivos generados:</p>
@@ -153,8 +154,13 @@ hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd 
 </span></span><span style="display:flex;"><span>git push
 </span></span></code></pre></div><p>En GitHub, activa GitHub Pages en la configuración del repositorio, seleccionando la rama <code>main</code> y la carpeta <code>/docs</code>.</p>
 <h3 id="enlace-de-la-documentación">Enlace de la documentación</h3>
-<pre tabindex="0"><code>https://tuusuario.github.io/mi-documentacion/
-</code></pre>
+<p>En github el repositorio creado, vemos el contenido subido de nuestra pagina en Hugo</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/gihub.png" alt=""></p>
+<p>Si vamos a ajustes -&gt; páginas podemos ver la url de nuestra paginaweb para poder acceder</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/gihub2.png" alt=""></p>
+<p>La url sería está:</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/urlgihub.png" alt=""></p>
+
 
 		
 	</div>
@@ -171,7 +177,7 @@ hugo version 2. Crear un nuevo sitio con Hugo hugo new site mi-documentacion cd 
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-12 10:41:49.8145647 &#43;0100 CET m=&#43;0.306984401">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-12 10:57:21.7774684 &#43;0100 CET m=&#43;0.098459901">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

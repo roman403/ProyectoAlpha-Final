@@ -28,36 +28,34 @@ hugo new site mi-documentacion
 cd mi-documentacion
 ```
 
-## 3. Agregar el tema `hugo-book`
+![](https://roman403.github.io/ProyectoAlpha-Final/temahugo.png)
 
-El tema `hugo-book` es una excelente opción para documentación porque ofrece una navegación clara y estructurada, con un diseño minimalista y optimizado para la lectura. Además, soporta búsqueda integrada y un formato tipo libro que facilita la organización del contenido.
+## 3. Agregar el tema `hugo-tale`
+
+El tema `tale` es una excelente opción para documentación porque ofrece una navegación clara y estructurada.
 
 ```bash
 git init
-git submodule add https://github.com/alex-shpak/hugo-book.git themes/hugo-book
+git submodule add https://github.com/alex-shpak/hugo-tale.git themes/hugo-tale
 ```
 
 Configura el tema en `hugo.toml`:
 
-```bash
-echo 'theme = "hugo-book"' >> hugo.toml
-```
+![](https://roman403.github.io/ProyectoAlpha-Final/temahugo2.png)
+
 
 ## 4. Estructurar la documentación en `.md`
 
 Crea el directorio `content/docs` y agrega un archivo Markdown:
 
 ```bash
-mkdir -p content/docs
 hugo new docs/introduccion.md
 ```
 
 Edita `content/docs/introduccion.md` y agrega contenido:
 
-```markdown
----
-title: "Introducción"
----
+![](https://roman403.github.io/ProyectoAlpha-Final/contenidohugo.png)
+
 
 # Bienvenido a la Documentación
 
@@ -69,10 +67,10 @@ Este es un ejemplo de documentación con Hugo.
 Edita el archivo `hugo.toml` y agrega:
 
 ```toml
-baseURL = 'https://tuusuario.github.io/mi-documentacion/'
+baseURL = 'https://roman403.github.io/ProyectoAlpha-Final/'
 languageCode = 'es'
 title = 'Mi Documentación'
-theme = 'hugo-book'
+theme = 'hugo-tale'
 
 [params]
   BookTheme = 'light'
@@ -82,7 +80,7 @@ theme = 'hugo-book'
 ## 6. Compilar el sitio y probar localmente
 
 ```bash
-hugo server -D
+hugo server -d
 ```
 
 Visítalo en `http://localhost:1313/`.
@@ -105,7 +103,7 @@ git push -u origin main
 GitHub Pages requiere que los archivos generados estén en la rama `gh-pages`. Para hacerlo:
 
 ```bash
-hugo -D -d docs
+hugo -d docs
 ```
 
 Agrega `docs` como directorio de publicación en `hugo.toml`:
@@ -126,7 +124,14 @@ En GitHub, activa GitHub Pages en la configuración del repositorio, seleccionan
 
 ### Enlace de la documentación
 
-```
-https://tuusuario.github.io/mi-documentacion/
-```
+En github el repositorio creado, vemos el contenido subido de nuestra pagina en Hugo
 
+![](https://roman403.github.io/ProyectoAlpha-Final/gihub.png)
+
+Si vamos a ajustes -> páginas podemos ver la url de nuestra paginaweb para poder acceder 
+
+![](https://roman403.github.io/ProyectoAlpha-Final/gihub2.png)
+
+La url sería está:
+
+![](https://roman403.github.io/ProyectoAlpha-Final/urlgihub.png)
