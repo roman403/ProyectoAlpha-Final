@@ -60,9 +60,9 @@ Edita `content/docs/introduccion.md` y agrega contenido:
 # Bienvenido a la Documentación
 
 Este es un ejemplo de documentación con Hugo.
-```
 
-## 5. Configurar `hugo.toml` para documentación
+
+## 5. Configurar hugo.toml para documentación
 
 Edita el archivo `hugo.toml` y agrega:
 
