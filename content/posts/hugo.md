@@ -143,3 +143,5 @@ Para sincronizar los cambios que vayamos haciendo el local tendremos que hacer u
 
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/commit.png)
+
+![](https://roman403.github.io/ProyectoAlpha-Final/sincronizar.png)
