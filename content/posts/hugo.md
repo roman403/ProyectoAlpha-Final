@@ -135,3 +135,11 @@ Si vamos a ajustes -> páginas podemos ver la url de nuestra paginaweb para pode
 La url sería está:
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/urlgihub.png)
+
+
+### Enlace de la documentación
+
+Para sincronizar los cambios que vayamos haciendo el local tendremos que hacer un commit y sincronizarlo con github para que se actualice nuestra página
+
+
+![](https://roman403.github.io/ProyectoAlpha-Final/commit.png)
