@@ -137,7 +137,7 @@ La url sería está:
 ![](https://roman403.github.io/ProyectoAlpha-Final/urlgihub.png)
 
 
-### Enlace de la documentación
+### Realizar cambios 
 
 Para sincronizar los cambios que vayamos haciendo el local tendremos que hacer un commit y sincronizarlo con github para que se actualice nuestra página
 
