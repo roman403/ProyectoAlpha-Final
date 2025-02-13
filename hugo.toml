@@ -16,3 +16,9 @@ theme = "tale"
     title = "Posts"
     url = "/posts/"
     weight = 0
+  [[menu.main]]
+    identifier = "DNS"
+    name = "DNS"
+    title = "DNS"
+    url = "/posts/dns"
+    weight = 0
