@@ -4,12 +4,7 @@ title = "ALPHA"
 theme = "tale"
 
 [menu]
-  [[menu.main]]
-    identifier = "ARQUITECTURA"
-    name = "ARQUITECTURA"
-    title = "ARQUITECTURA"
-    url = "/ARQUITECTURA/"
-    weight = 0
+
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
@@ -63,4 +58,10 @@ theme = "tale"
     name = "WORDPRESS"
     title = "WORDPRESS"
     url = "/posts/WORDPRESS"
+    weight = 0
+  [[menu.main]]
+    identifier = "ARQUITECTURA"
+    name = "ARQUITECTURA"
+    title = "ARQUITECTURA"
+    url = "/ARQUITECTURA/"
     weight = 0
