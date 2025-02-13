@@ -22,3 +22,21 @@ theme = "tale"
     title = "DNS"
     url = "/posts/dns"
     weight = 0
+  [[menu.main]]
+    identifier = "HUGO"
+    name = "HUGO"
+    title = "HUGO"
+    url = "/posts/HUGO"
+    weight = 0
+   [[menu.main]]
+    identifier = "BACKUP"
+    name = "BACKUP"
+    title = "BACKUP"
+    url = "/posts/BACKUP"
+    weight = 0
+   [[menu.main]]
+    identifier = "NGINX"
+    name = "NGINX"
+    title = "NGINX"
+    url = "/posts/NGINX"
+    weight = 0
