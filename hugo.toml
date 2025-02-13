@@ -5,10 +5,10 @@ theme = "tale"
 
 [menu]
   [[menu.main]]
-    identifier = "arquitectura"
-    name = "arquitectura"
-    title = "arquitectura"
-    url = "/arquitectura/"
+    identifier = "ARQUITECTURA"
+    name = "ARQUITECTURA"
+    title = "ARQUITECTURA"
+    url = "/ARQUITECTURA/"
     weight = 0
   [[menu.main]]
     identifier = "posts"
