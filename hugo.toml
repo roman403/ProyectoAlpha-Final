@@ -28,15 +28,39 @@ theme = "tale"
     title = "HUGO"
     url = "/posts/HUGO"
     weight = 0
-   [[menu.main]]
+  [[menu.main]]
     identifier = "BACKUP"
     name = "BACKUP"
     title = "BACKUP"
     url = "/posts/BACKUP"
     weight = 0
-   [[menu.main]]
+  [[menu.main]]
     identifier = "NGINX"
     name = "NGINX"
     title = "NGINX"
     url = "/posts/NGINX"
+    weight = 0
+  [[menu.main]]
+    identifier = "SEGURIDAD"
+    name = "SEGURIDAD"
+    title = "SEGURIDAD"
+    url = "/posts/SEGURIDAD"
+    weight = 0
+  [[menu.main]]
+    identifier = "SERVICIOS"
+    name = "SERVICIOS"
+    title = "SERVICIOS"
+    url = "/posts/SERVICIOS"
+    weight = 0
+  [[menu.main]]
+    identifier = "VPN"
+    name = "VPN"
+    title = "VPN"
+    url = "/posts/VPN"
+    weight = 0
+    [[menu.main]]
+    identifier = "WORDPRESS"
+    name = "WORDPRESS"
+    title = "WORDPRESS"
+    url = "/posts/WORDPRESS"
     weight = 0
