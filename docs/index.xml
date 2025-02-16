@@ -6,15 +6,8 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 09 Feb 2025 17:08:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2025 16:58:45 +0100</lastBuildDate>
     <atom:link href="https://roman403.github.io/ProyectoAlpha-Final/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Nginx Ubuntu</title>
-      <link>https://roman403.github.io/ProyectoAlpha-Final/posts/nginxubuntu/</link>
-      <pubDate>Sun, 09 Feb 2025 17:08:25 +0100</pubDate>
-      <guid>https://roman403.github.io/ProyectoAlpha-Final/posts/nginxubuntu/</guid>
-      <description>&lt;p&gt;Instalación de Nginx: Nos conectamos a la instancia y descargamos Nginx, previamente actualizamos&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;verificamos-la-instalación&#34;&gt;&lt;strong&gt;Verificamos la instalación&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Para asegurarnos de que NGINX está instalado correctamente, revisamos su estado:&lt;/p&gt;&#xA;&lt;p&gt;sudo systemctl status nginx&lt;/p&gt;&#xA;&lt;p&gt;Si NGINX no está activo, lo iniciamos manualmente:&lt;/p&gt;&#xA;&lt;p&gt;sudo systemctl start nginx&lt;/p&gt;&#xA;&lt;p&gt;Y para asegurarnos de que se inicie automáticamente el sistema:&lt;/p&gt;&#xA;&lt;p&gt;sudo systemctl enable nginx&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/nginxubuntu3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;También verificamos que el &lt;strong&gt;Grupo de Seguridad (Security Group)&lt;/strong&gt; de la instancia en AWS tiene las reglas correctas:&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Backup</title>
       <link>https://roman403.github.io/ProyectoAlpha-Final/posts/backup/</link>

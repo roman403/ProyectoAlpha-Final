@@ -1,6 +1,6 @@
 ---
 date : 2025-02-09T17:08:25+01:00
-draft : false
+draft : true
 title : "Nginx Ubuntu"
 ---
 
