@@ -59,6 +59,7 @@ Despues de crear el par de claves solo deberemos editar el fichero de configurac
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/1.png)
 
+
 ## Nginx externo {#nginx-externo}
 
 ### Configuración {#configuración}

@@ -16,6 +16,20 @@
       <description>&lt;p&gt;Para hacer backup de las máquinas que tenemos instaladas en AWS, podemos utilizar el servicio AWS Backup.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/backup1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Iniciamos sesión en tu cuenta de AWS y abrimos la consola de administración.&lt;/p&gt;&#xA;&lt;p&gt;Seleccionamos &amp;ldquo;Servicios&amp;rdquo; en la barra superior y escribimos &amp;ldquo;AWS Backup&amp;rdquo; en la barra de búsqueda.&lt;/p&gt;&#xA;&lt;p&gt;Hacemos clic en &amp;ldquo;Crear plan de copia de seguridad&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/backup2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Configuramos el plan de backup según nuestras necesidades, como la frecuencia de las copias de seguridad y la retención de datos. En nuestro caso haremos backup de todas las máquinas&lt;/p&gt;</description>
     </item>
     <item>
+      <title>CORREO</title>
+      <link>https://roman403.github.io/ProyectoAlpha-Final/posts/correo/</link>
+      <pubDate>Sun, 09 Feb 2025 16:58:45 +0100</pubDate>
+      <guid>https://roman403.github.io/ProyectoAlpha-Final/posts/correo/</guid>
+      <description>&lt;p&gt;Empezamos instalando postfix&lt;/p&gt;&#xA;&lt;p&gt;sudo apt-get update&#xA;sudo apt-get install postfix&lt;/p&gt;&#xA;&lt;p&gt;selecionamos sitio de internet&lt;/p&gt;&#xA;&lt;p&gt;creamos lo usuarios&lt;/p&gt;&#xA;&lt;p&gt;sudo adduser cliente1&#xA;sudo adduser cliente2&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/imagenNGX5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/imagenNGX5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/imagenNGX5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo apt update&#xA;sudo apt install dovecot-imapd dovecot-pop3d&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CORREO</title>
+      <link>https://roman403.github.io/ProyectoAlpha-Final/posts/paginawebvisual/</link>
+      <pubDate>Sun, 09 Feb 2025 16:58:45 +0100</pubDate>
+      <guid>https://roman403.github.io/ProyectoAlpha-Final/posts/paginawebvisual/</guid>
+      <description>&lt;h3 id=&#34;parte-visual&#34;&gt;Parte Visual&lt;/h3&gt;&#xA;&lt;p&gt;Está será la vista a nivel visual que tendrán los usuarios&lt;/p&gt;&#xA;&lt;p&gt;http externa&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/1.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;https externa&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/2.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;pagina de error&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/3.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;http del interno&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;https del interno&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/6.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Seguridad</title>
       <link>https://roman403.github.io/ProyectoAlpha-Final/posts/seguridad/</link>
       <pubDate>Sun, 09 Feb 2025 16:56:40 +0100</pubDate>
