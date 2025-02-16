@@ -10,6 +10,18 @@ theme = "tale"
     url = "/posts/dns"
     weight = 0
   [[menu.main]]
+    identifier = "PAGINA WEB VISUAL"
+    name = "PAGINA WEB VISUAL"
+    title = "PAGINA WEB VISUAL"
+    url = "/posts/PaginaWebVisual"
+    weight = 0
+  [[menu.main]]
+    identifier = "CORREO"
+    name = "CORREO"
+    title = "CORREO"
+    url = "/posts/CORREO"
+    weight = 0
+  [[menu.main]]
     identifier = "HUGO"
     name = "HUGO"
     title = "HUGO"

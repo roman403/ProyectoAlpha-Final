@@ -1,7 +1,7 @@
 ---
 date : 2025-02-09T16:58:45+01:00
 draft : false
-title : "CORREO"
+title : "PAGINA WEB VISUAL"
 ---
 
 ### Parte Visual
