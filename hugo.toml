@@ -23,12 +23,6 @@ theme = "tale"
     url = "/posts/BACKUP"
     weight = 0
   [[menu.main]]
-    identifier = "NGINX"
-    name = "NGINX"
-    title = "NGINX"
-    url = "/posts/NGINX"
-    weight = 0
-  [[menu.main]]
     identifier = "SEGURIDAD"
     name = "SEGURIDAD"
     title = "SEGURIDAD"
