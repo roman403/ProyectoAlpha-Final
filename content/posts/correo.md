@@ -34,6 +34,7 @@ Para comprobar que lo ha recibido el cliente2 nos loegamos como el y lo comproba
 sudo apt update
 sudo apt install dovecot-imapd dovecot-pop3d
 
+Tras comprobar que el servidor esta iniciado
 Configuracion
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/mail.conf.jfif)
