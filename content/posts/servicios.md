@@ -55,6 +55,10 @@ Tenemos que crear un par de claves para añadirlo en la configuración.
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/imagenNGX13.png)
 
+Despues de crear el par de claves solo deberemos editar el fichero de configuración de nginx de redhat. Este par de claves al ser autofirmadas daran fallo.
+
+![](https://roman403.github.io/ProyectoAlpha-Final/1.png)
+
 ## Nginx externo {#nginx-externo}
 
 ### Configuración {#configuración}
@@ -119,6 +123,15 @@ También redirigimos HTTP a HTTPS
 
 ![](https://roman403.github.io/ProyectoAlpha-Final/imagenNGX23.png)
 
+Nota aqui el nombre no es darkkingdragon.com, es ventas.darkkingdragon.com.
+
+Para obtener un certificado oficial usamos un proveedor de certificados SSL como Let’s Encrypt.
+
+Para Let’s Encrypt instalamos el cliente certbot y configuramos automaticamente SSL
+
+![](https://roman403.github.io/ProyectoAlpha-Final/2.png)
+
 Guardamos y reiniciamos Nginx
 
+![](https://roman403.github.io/ProyectoAlpha-Final/3.png)
 

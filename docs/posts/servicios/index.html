@@ -165,6 +165,8 @@ Ahora iremos al fichero de configuración de nginx.">
 <h3 id="https">HTTPS</h3>
 <p>Tenemos que crear un par de claves para añadirlo en la configuración.</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagenNGX13.png" alt=""></p>
+<p>Despues de crear el par de claves solo deberemos editar el fichero de configuración de nginx de redhat. Este par de claves al ser autofirmadas daran fallo.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/1.png" alt=""></p>
 <h2 id="nginx-externo">Nginx externo</h2>
 <h3 id="configuración">Configuración</h3>
 <p>La instalación de Nginx será en la máquina de Ubuntu.</p>
@@ -197,7 +199,12 @@ Ahora iremos al fichero de configuración de nginx.">
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagenNGX22.png" alt=""></p>
 <p>También redirigimos HTTP a HTTPS</p>
 <p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagenNGX23.png" alt=""></p>
+<p>Nota aqui el nombre no es darkkingdragon.com, es ventas.darkkingdragon.com.</p>
+<p>Para obtener un certificado oficial usamos un proveedor de certificados SSL como Let’s Encrypt.</p>
+<p>Para Let’s Encrypt instalamos el cliente certbot y configuramos automaticamente SSL</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/2.png" alt=""></p>
 <p>Guardamos y reiniciamos Nginx</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/3.png" alt=""></p>
 
 
 		
@@ -215,7 +222,7 @@ Ahora iremos al fichero de configuración de nginx.">
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-16 14:00:40.1386321 &#43;0100 CET m=&#43;0.099273901">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-16 16:28:13.1127216 &#43;0100 CET m=&#43;0.096533001">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
