@@ -28,9 +28,9 @@ theme = "tale"
     url = "/posts/SEGURIDAD"
     weight = 0
   [[menu.main]]
-    identifier = "SERVICIOS"
-    name = "SERVICIOS"
-    title = "SERVICIOS"
+    identifier = "PAGINA WEB"
+    name = "PAGINA WEB"
+    title = "PAGINA WEB"
     url = "/posts/SERVICIOS"
     weight = 0
   [[menu.main]]
