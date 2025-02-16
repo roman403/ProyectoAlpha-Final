@@ -6,19 +6,19 @@ title : "PAGINA WEB VISUAL"
 
 ### Parte Visual
 
-Está será la vista a nivel visual que tendrán los usuarios 
+# Está será la vista a nivel visual que tendrán los usuarios 
 
- http externa
+## http externa
 ![](https://roman403.github.io/ProyectoAlpha-Final/1.jpeg)
 
- https externa
+## https externa
 ![](https://roman403.github.io/ProyectoAlpha-Final/2.jpeg)
 
- pagina de error
+## pagina de error
 ![](https://roman403.github.io/ProyectoAlpha-Final/3.jpeg)
 
-http del interno
+## http del interno
 ![](https://roman403.github.io/ProyectoAlpha-Final/4.jpeg)
 
-https del interno
+## https del interno
 ![](https://roman403.github.io/ProyectoAlpha-Final/6.jpeg)
