@@ -4,48 +4,23 @@ draft : false
 title : "VPN"
 ---
 
-## OpenVPN {#openvpn}
 
-Tenemos que instalar el servicio de openVPN.
+Instalamos Docker, Docker compose y wireguard 
 
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen32.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/magen1.png)
 
-Ahora deberemos de instalar easy-RSA para poder gestionar el tema de usuarios
+Creamos el directorio donde va a trabajar el contenedor y cambiamos el usuario y grupo al que pertenece  
 
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen33.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/magen2.png)
 
-Despues de instalarlo creamos una carpeta para poder gestionarlo.
+Creamos el fichero de Docker-compose
 
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen34.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/magen3.png)
 
-Ahora deberemos añadir esta ruta como symlink para que pueda acceder facilmente la aplicacion de easy-RSA.
+Nos situamos en el directorio /opt/wireguard-server y en este lanzamos el Docker-compose 
 
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen35.png)
+![](https://roman403.github.io/ProyectoAlpha-Final/magen4.png)
 
-Ahora deberemos crear una PKI en el home de easy-rsa.
+Verificamos que se ha creado el contenedor y está activo 
 
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen36.png)
-
-Ejecutamos el comando easyrsa.
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen37.png)
-
-Ahora tomara la configuración que creamos antes. Ahora le daremos un nombre a la maquina para poder acceder, además crea las claves privada y publica.
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen38.png)
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen39.png)
-
-Ahora deberemos de mover la clave a el directorio de openvpn.
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen40.png)
-
-Ahora cogemos la configuración de ejemplo y la pasamos al fichero de openvpn.
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen41.png)
-
-Ahora vamos al fichero de configuración.
-
-![](https://roman403.github.io/ProyectoAlpha-Final/Imagen42.png)
-
-Uso esta guía. [https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-es](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-es)
+![](https://roman403.github.io/ProyectoAlpha-Final/magen5.png)
