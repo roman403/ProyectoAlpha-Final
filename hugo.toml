@@ -28,6 +28,12 @@ theme = "tale"
     url = "/posts/HUGO"
     weight = 0
   [[menu.main]]
+    identifier = "MOODLE"
+    name = "MOODLE"
+    title = "MOODLE"
+    url = "/posts/MOODLE"
+    weight = 0
+  [[menu.main]]
     identifier = "BACKUP"
     name = "BACKUP"
     title = "BACKUP"
