@@ -4,17 +4,12 @@
 		
 		
 		
-		<meta property="og:url" content="https://roman403.github.io/ProyectoAlpha-Final/posts/correo/">
-  <meta property="og:title" content="CORREO">
-  <meta property="og:description" content="Empezamos instalando postfix
-sudo apt-get update sudo apt-get install postfix
-Nombre de sistema de correo ponemos nuestro dominio
-selecionamos sitio de internet
-Archivo de configuracion de postfix creamos lo usuarios
-sudo adduser cliente1 sudo adduser cliente2
-Para mandar un correo de un usuario a otro usuario usamos: desde el clinte1 mail client2@darkkingdragon.com
-Para comprobar que lo ha recibido el cliente2 nos loegamos como el y lo comprobamos
-sudo apt update sudo apt install dovecot-imapd dovecot-pop3d">
+		<meta property="og:url" content="https://roman403.github.io/ProyectoAlpha-Final/posts/moodle/">
+  <meta property="og:title" content="MOODLE">
+  <meta property="og:description" content="Vamos a instalar una herramienta en la instancia de Nginx/moodle. Para ello nos conectamos a ella a través de la instancia externa. En esta instancia ya tenemos instalado Mariadb, PHP, y Apache.
+Creamos una base de datos para Moodle
+Accedemos a Mariadb y creamos la base de datos llamada moodle, un usuario y le damos privilegios.
+Descargamos y configuramos Moodle en la carpeta /var/www/html sudo yum install -y git">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -25,7 +20,7 @@ sudo apt update sudo apt install dovecot-imapd dovecot-pop3d">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>CORREO &middot; </title>
+		<title>MOODLE &middot; </title>
 
 		
 		<link rel="stylesheet" href="/ProyectoAlpha-Final/css/style.css">
@@ -155,40 +150,47 @@ sudo apt update sudo apt install dovecot-imapd dovecot-pop3d">
         <span>on&nbsp;</span><time datetime="2025-02-09 16:58:45 &#43;0100 CET">February 9, 2025</time>
 </div>
 
-		<h1 class="post-title">CORREO</h1>
+		<h1 class="post-title">MOODLE</h1>
 <div class="post-line"></div>
 
 		
 
-		<p>Empezamos instalando postfix</p>
-<p>sudo apt-get update
-sudo apt-get install postfix</p>
-<p>Nombre de sistema de correo ponemos nuestro dominio</p>
-<p>selecionamos sitio de internet</p>
-<p>Archivo de configuracion de postfix
-<img src="https://roman403.github.io/ProyectoAlpha-Final/MAINCF.jpeg" alt=""></p>
-<p>creamos lo usuarios</p>
-<p>sudo adduser cliente1
-sudo adduser cliente2</p>
-<p>Para mandar un correo de un usuario a otro usuario usamos:
-desde el clinte1
-mail <a href="mailto:client2@darkkingdragon.com">client2@darkkingdragon.com</a></p>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/cliente1envia.jfif" alt=""></p>
-<p>Para comprobar que lo ha recibido el cliente2 nos loegamos como el y lo comprobamos</p>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/cliente2Recibe.jfif" alt=""></p>
-<p>sudo apt update
-sudo apt install dovecot-imapd dovecot-pop3d</p>
-<p>Tras comprobar que el servidor esta iniciado
-Configuracion</p>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/mail.conf.jfif" alt=""></p>
+		<p>Vamos a instalar una herramienta en la instancia de Nginx/moodle. Para ello nos conectamos a ella a través de la instancia externa. En esta instancia ya tenemos instalado Mariadb, PHP, y Apache.</p>
+<p>Creamos una base de datos para Moodle</p>
+<p>Accedemos a Mariadb y creamos la base de datos llamada moodle, un usuario y le damos privilegios.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M1.png" alt=""></p>
+<p>Descargamos y configuramos Moodle en la carpeta /var/www/html
+sudo yum install -y git</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M2.png" alt=""></p>
+<p>sudo git clone -b MOODLE_401_STABLE <a href="https://github.com/moodle/moodle.git">https://github.com/moodle/moodle.git</a></p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M3.png" alt=""></p>
+<p>sudo mv moodle /var/www/html/moodle</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M4.png" alt=""></p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M5.png" alt=""></p>
+<p>Configuramos los permisos
+sudo mkdir -p /var/www/moodledata
+sudo chown -R nginx:nginx /var/www/html/moodle /var/www/moodledata
+sudo chmod -R 755 /var/www/html/moodle
+sudo chmod -R 777 /var/www/moodledata</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M6.png" alt=""></p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M7.png" alt=""></p>
+<p>Configuramos Nginx
+Editamos el archivo de configuración de Nginx
+sudo nano /etc/nginx/conf.d/moodle.conf</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M8.png" alt=""></p>
+<p>Reiniciamos Nginx
+sudo systemctl restart nginx</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M9.png" alt=""></p>
+<p>Para configurar la base de datos en moodle entramos vía web a través del VPN
+<a href="http://darkkingdragon.com/moodle">http://darkkingdragon.com/moodle</a></p>
 
 
 		
 	</div>
 
 	<div class="pagination">
-		<a href="/ProyectoAlpha-Final/posts/moodle/" class="left arrow">&#8592;</a>
-		<a href="/ProyectoAlpha-Final/posts/backup/" class="right arrow">&#8594;</a>
+		<a href="/ProyectoAlpha-Final/posts/paginawebvisual/" class="left arrow">&#8592;</a>
+		<a href="/ProyectoAlpha-Final/posts/correo/" class="right arrow">&#8594;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
@@ -198,7 +200,7 @@ Configuracion</p>
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-17 11:58:50.209014 &#43;0100 CET m=&#43;0.148944301">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-17 11:58:50.2084132 &#43;0100 CET m=&#43;0.148343501">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

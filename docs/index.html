@@ -187,6 +187,24 @@ sudo apt install dovecot-imapd dovecot-pop3d</p>
 </a>
 
 		
+			<a href="https://roman403.github.io/ProyectoAlpha-Final/posts/moodle/" class="catalogue-item">
+    <div>
+        <time datetime="2025-02-09 16:58:45 &#43;0100 CET" class="catalogue-time">February 9, 2025</time>
+        <h2 class="catalogue-title">MOODLE</h2>
+        <div class="catalogue-line"></div>
+
+        <p>
+            <p>Vamos a instalar una herramienta en la instancia de Nginx/moodle. Para ello nos conectamos a ella a través de la instancia externa. En esta instancia ya tenemos instalado Mariadb, PHP, y Apache.</p>
+<p>Creamos una base de datos para Moodle</p>
+<p>Accedemos a Mariadb y creamos la base de datos llamada moodle, un usuario y le damos privilegios.</p>
+<p><img src="https://roman403.github.io/ProyectoAlpha-Final/M1.png" alt=""></p>
+<p>Descargamos y configuramos Moodle en la carpeta /var/www/html
+sudo yum install -y git</p>
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://roman403.github.io/ProyectoAlpha-Final/posts/paginawebvisual/" class="catalogue-item">
     <div>
         <time datetime="2025-02-09 16:58:45 &#43;0100 CET" class="catalogue-time">February 9, 2025</time>
@@ -348,30 +366,12 @@ sudo apt install dovecot-imapd dovecot-pop3d</p>
 </a>
 
 		
-			<a href="https://roman403.github.io/ProyectoAlpha-Final/arquitectura/" class="catalogue-item">
-    <div>
-        <time datetime="2025-02-09 12:15:37 &#43;0100 CET" class="catalogue-time">February 9, 2025</time>
-        <h2 class="catalogue-title">Arquitectura</h2>
-        <div class="catalogue-line"></div>
-
-        <p>
-            <p>Esta es la infraestructura usada en este proyecto</p>
-<p>Se realizo en AWS con las siguientes máquinas</p>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/infraestructura.jfif" alt=""></p>
-<h1 id="estructura-de-la-red">Estructura de la red</h1>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen1.png" alt="">
-Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip flotante mediante el agente ssh.</p>
-<p><img src="https://roman403.github.io/ProyectoAlpha-Final/imagen2.png" alt=""></p>
-<p>Tenemos dos máquinas que darán servicio en internet, serán un windows, permitiendo usar su resolución de nombres para nuestro dominio y un mail para que nuestros empleados y nuestros clientes puedan hacer uso de él. Y la otra maquina que dara servicio de un segundo DNS para evitar sobrecargar el primario, teniendo el todas las ip de la red interna para poder hacer buen uso, además contara con un nginx que dará servicio a nuestra página en internet. Ademas de eso tendremos un ubuntu que hace servicio de VPN</p>
-        </p>
-    </div>
-</a>
-
-		
 	</div>
 
 	<div class="pagination">
 		
+		
+			<a href="/ProyectoAlpha-Final/page/2/" class="right arrow">&#8594;</a>
 		
 
 		<span>1</span>
@@ -382,7 +382,7 @@ Esa será la estructura de nuestra red. Nos conectaremos a las maquinas sin ip f
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-02-16 20:06:17.3521978 &#43;0100 CET m=&#43;0.090621801">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2025-02-17 11:58:50.2131302 &#43;0100 CET m=&#43;0.153060501">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

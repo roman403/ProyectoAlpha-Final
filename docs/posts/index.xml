@@ -23,6 +23,13 @@
       <description>&lt;p&gt;Empezamos instalando postfix&lt;/p&gt;&#xA;&lt;p&gt;sudo apt-get update&#xA;sudo apt-get install postfix&lt;/p&gt;&#xA;&lt;p&gt;Nombre de sistema de correo ponemos nuestro dominio&lt;/p&gt;&#xA;&lt;p&gt;selecionamos sitio de internet&lt;/p&gt;&#xA;&lt;p&gt;Archivo de configuracion de postfix&#xA;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/MAINCF.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;creamos lo usuarios&lt;/p&gt;&#xA;&lt;p&gt;sudo adduser cliente1&#xA;sudo adduser cliente2&lt;/p&gt;&#xA;&lt;p&gt;Para mandar un correo de un usuario a otro usuario usamos:&#xA;desde el clinte1&#xA;mail &lt;a href=&#34;mailto:client2@darkkingdragon.com&#34;&gt;client2@darkkingdragon.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/cliente1envia.jfif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Para comprobar que lo ha recibido el cliente2 nos loegamos como el y lo comprobamos&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/cliente2Recibe.jfif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo apt update&#xA;sudo apt install dovecot-imapd dovecot-pop3d&lt;/p&gt;</description>
     </item>
     <item>
+      <title>MOODLE</title>
+      <link>https://roman403.github.io/ProyectoAlpha-Final/posts/moodle/</link>
+      <pubDate>Sun, 09 Feb 2025 16:58:45 +0100</pubDate>
+      <guid>https://roman403.github.io/ProyectoAlpha-Final/posts/moodle/</guid>
+      <description>&lt;p&gt;Vamos a instalar una herramienta en la instancia de Nginx/moodle. Para ello nos conectamos a ella a través de la instancia externa. En esta instancia ya tenemos instalado Mariadb, PHP, y Apache.&lt;/p&gt;&#xA;&lt;p&gt;Creamos una base de datos para Moodle&lt;/p&gt;&#xA;&lt;p&gt;Accedemos a Mariadb y creamos la base de datos llamada moodle, un usuario y le damos privilegios.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://roman403.github.io/ProyectoAlpha-Final/M1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Descargamos y configuramos Moodle en la carpeta /var/www/html&#xA;sudo yum install -y git&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>PAGINA WEB VISUAL</title>
       <link>https://roman403.github.io/ProyectoAlpha-Final/posts/paginawebvisual/</link>
       <pubDate>Sun, 09 Feb 2025 16:58:45 +0100</pubDate>
